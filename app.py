@@ -94,8 +94,7 @@ def synthesize_api():
         })
    
 except Exception as e:
-    app.logger.exception("Edge TTS synthesis failed")
-    return jsonify({"error": str(e)}), 500
+    return jsonify({"error":str(e)}),500
 
 
 @app.get("/health")
